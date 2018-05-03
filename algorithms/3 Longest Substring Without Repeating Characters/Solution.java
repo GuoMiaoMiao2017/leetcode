@@ -26,13 +26,13 @@ class Solution {
                 } else {
                     num++;
                     list.add(num);
-                    for (int k = i + 1; k < j ; k++) {
-                        if (s.charAt(j) == s.charAt(k)) {
-                            break;
-                        } else {
-                            continue;
-                        }
-                    }
+                    // for (int k = i + 1; k < j ; k++) {
+                    //     if (s.charAt(j) == s.charAt(k)) {
+                    //         break;
+                    //     } else {
+                    //         continue;
+                    //     }
+                    // }
                     System.out.println("&&&&&&&&&&&num = " + num + s.charAt(i) + s.charAt(j));
                 }
             }
