@@ -19,6 +19,8 @@ Example 4:
 
 Input: [1,3,5,6], 0
 Output: 0
+
+¶þ·Ö²éÕÒ
 */
 
 class Solution {
@@ -28,7 +30,6 @@ class Solution {
         if (target <= nums[0])
             return 0;
         
-        int length = nums.length;
         int start = 0;
         int end = length - 1;
         int mid = 0; 
