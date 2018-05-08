@@ -39,19 +39,6 @@ Output: "bb"
         }
         return true;
     }
-    //判断一个字符串s从start到end这个子串是不是回文数
-
-    public boolean isPalindrome(String s, int start, int end) {
-        if (new Character(s.charAt(start)).equals(new Character(s.charAt(end)))) {
-            return isPalindrome(s, start+1, end-1);
-        } else 
-           return false;
-    }
-    //magic
-    // public boolean magic(String s, int start, int end) {
-        
-    // }
-
 
     public static void main(String[] args) {
         String string = "babad";
