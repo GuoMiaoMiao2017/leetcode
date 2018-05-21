@@ -20,24 +20,19 @@ Output: 1->2->3
 
  class Solution {
    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null) 
+            return null;
         ListNode headNode = head;
         ListNode currentNode = head;
-        if (headNode != null) {
-            if (headNode.next != null) {
-                while (currentNode.next != null) {
-                    if (pugeequals(currentNode, currentNode.next)) {
-                        currentNode = currentNode.next;
-                    } else {
-                        ListNode listNode = currentNode.next;
-                        currentNode.next = listNode.next;
-                        listNode.next = null;
-                    }
-                }
-                
-            } else 
-                return headNode;
-        } else 
-            return null;
+        while (currentNode.next != null) {
+            if (pugeequals(currentNode, currentNode.next)) {
+                currentNode = currentNode.next;
+            } else {
+                ListNode listNode = currentNode.next;
+                currentNode.next = listNode.next;
+                listNode.next = null;
+            }
+        }
         return headNode;
     }
 
